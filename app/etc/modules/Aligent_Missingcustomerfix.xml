@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Aligent_Missingcustomerfix>
+             <active>true</active>
+             <codePool>community</codePool>
+             <depends>
+             </depends>
+        </Aligent_Missingcustomerfix>
+    </modules>
+</config>
+

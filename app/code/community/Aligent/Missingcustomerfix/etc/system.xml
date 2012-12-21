@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category    Aligent
+ * @author      Shaun O'Reilly <shaun@aligent.com.au>
+ */
+-->
+<config>
+    <sections>
+        <sales>
+            <groups>
+                <sales_quote translate="label comment">
+                    <label>Quotes Auto Archiving</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>0</show_in_website>
+                    <show_in_store>0</show_in_store>
+                    <fields>
+                        <days_before_archive translate="label comment">
+                            <label>Days before auto archiving quotes</label>
+                            <comment>Days before auto archiving quotes, which has been made inactive, x days ago</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </days_before_archive>
+                    </fields>
+                </sales_quote>
+            </groups>
+        </sales>
+    </sections>
+</config>

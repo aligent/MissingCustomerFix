@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!-- 
+/**
+* @category   Aligent
+* @author     Shaun O'Reilly <shaun@aligent.com.au>
+* @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */
+ -->
+<config>
+    <modules>
+        <Aligent_Missingcustomerfix>
+            <version>0.0.1</version>
+        </Aligent_Missingcustomerfix>
+    </modules>
+    <global>
+        <events>
+            <checkout_onepage_controller_success_action>
+                <observers>
+                    <sales_check_details>
+                        <type>singleton</type>
+                        <class>Aligent_Missingcustomerfix_Model_Observer</class>
+                        <method>CheckMissingClientDetails</method>
+                    </sales_check_details>
+                </observers>
+            </checkout_onepage_controller_success_action>
+        </events> 
+        <models>
+            <sales>
+                <rewrite>
+                    <observer>Aligent_Missingcustomerfix_Model_Observer</observer>
+                </rewrite>
+            </sales>
+        </models>
+    </global>
+    <phpunit>
+        <suite>
+            <modules>
+                 <Aligent_Missingcustomerfix/>
+            </modules>
+        </suite>
+    </phpunit>
+</config>
