@@ -1,0 +1,10 @@
+{
+  "name":"aligent/missingcustomerfix",
+  "type":"magento-module",
+  "homepage":"https://github.com/aligent/MissingCustomerFix",
+  "description":"Work-around to restore lost customer details on Magento orders.",
+  "require":{
+    "magento-hackathon/magento-composer-installer":"*"
+  }
+}
+
